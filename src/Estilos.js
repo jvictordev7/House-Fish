@@ -1,50 +1,56 @@
-import { StyleSheet } from "react-native";
+import { StyleSheet, Dimensions } from 'react-native';
 
-export default StyleSheet.create ({
+const { width, height } = Dimensions.get('window');
+
+export default StyleSheet.create({
     container: {
         flex: 1,
         justifyContent: 'center',
         alignItems: 'center',
         padding: 20,
-        backgroundColor: '#c1c2c1'
+        backgroundColor: 'rgba(0, 0, 0, 0.2)', // Fundo preto semitransparente
     },
-
     logo: {
-        width: 200,
-        height: 200,
-        marginBottom: 20,
+        width: 150,
+        height: 150,
+        marginBottom: 0,
     },
-
     loginText: {
-        fontSize: 25,
+        fontSize: 24,
         marginBottom: 15,
+        color: '#fff', // 
     },
-
     input: {
         width: '90%',
-        height: 50,
         padding: 12,
         borderWidth: 1,
-        borderColor: 'gray',
+        borderColor: '#ccc',
         borderRadius: 8,
         marginBottom: 15,
+        backgroundColor: '#fff', 
     },
-
     createAccountText: {
         color: 'blue',
         marginBottom: 15,
     },
-
     button: {
-        width: '200%',
-        padding: 100,
+        width: '50%',
+        padding: 10, 
         backgroundColor: 'blue',
         alignItems: 'center',
         borderRadius: 8,
+        marginTop: 0,
     },
-
     buttonText: {
         color: 'white',
-        fontSize: 16,
+        fontSize: 20, 
+    },
+    imageBackground: {
+        position: 'absolute',
+        bottom: -180, // Começar de baixo para cima
+        left: 0,
+        right: 0,
+        width: width,
+        height: height * 0.99, // 99% da altura da tela
     },
 });
