@@ -12,7 +12,7 @@ export default function App () {
       <TextInput placeholder="Email" style={Estilos.input} keyboardType="email-address" />
       <TextInput placeholder="Senha" style={Estilos.input} secureTextEntry />
       <TouchableOpacity>
-        <Text style={Estilos.createAccountText}>Crie sua conta</Text>
+        <Text style={Estilos.createAccountText}>Crie sua conta. TESTE</Text>
       </TouchableOpacity>
       <Button title="Login" onPress={() => {}} style={Estilos.button} />
     </View>
