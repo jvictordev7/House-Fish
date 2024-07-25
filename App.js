@@ -1,20 +1,20 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+// App.js
+import React from "react";
+import { Button, Text, TextInput, TouchableOpacity, View, Image } from "react-native";
+import Estilos from "./src/Estilos";
 
-export default function App() {
+export default function App () {
   return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
+    
+    <View style={Estilos.container}>
+      <Image source={require('./assets/logo.png')} style={Estilos.logo} />
+      <Text style={Estilos.loginText}>Welcome Tilapio</Text>
+      <TextInput placeholder="Email" style={Estilos.input} keyboardType="email-address" />
+      <TextInput placeholder="Senha" style={Estilos.input} secureTextEntry />
+      <TouchableOpacity>
+        <Text style={Estilos.createAccountText}>Crie sua conta</Text>
+      </TouchableOpacity>
+      <Button title="Login" onPress={() => {}} style={Estilos.button} />
     </View>
-  );
+  )
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
