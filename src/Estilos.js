@@ -11,16 +11,16 @@ export default StyleSheet.create({
         backgroundColor: 'rgba(0, 0, 0, 0.5)', // Fundo preto semitransparente
     },
     logo: {
-        width: 150,
-        height: 150,
+        width: 130,
+        height: 130,
         position: 'absolute',
-        bottom: 530, 
+        bottom: 570, 
     },
     loginText: {
         fontSize: 24,
         marginBottom: 15,
         color: '#fff',
-        bottom: 55,
+        bottom: 25,
     },
     input: {
         width: '90%',
@@ -30,12 +30,12 @@ export default StyleSheet.create({
         borderRadius: 15,
         marginBottom: 15,
         backgroundColor: '#fff', 
-        bottom: 55, 
+        bottom: 30, 
     },
     createAccountText: {
         color: 'blue',
         marginBottom: 15,
-        bottom: 60,
+        bottom: 40,
     },
 
     Text: {
@@ -48,7 +48,7 @@ export default StyleSheet.create({
         alignItems: 'center',
         borderRadius: 15,
         marginTop: 0,
-        bottom: 65,
+        bottom: 45,
     },
     buttonText: {
         color: 'white',
@@ -61,5 +61,5 @@ export default StyleSheet.create({
         right: 0,
         width: width,
         height: height * 0.99, // 99% da altura da tela
-    },
+    }
 });
