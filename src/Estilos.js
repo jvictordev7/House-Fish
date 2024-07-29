@@ -11,10 +11,11 @@ export default StyleSheet.create({
         backgroundColor: 'rgba(0, 0, 0, 0.5)', // Fundo preto semitransparente
     },
     logo: {
-        width: 130,
-        height: 130,
+        width: 110,
+        height: 110,
         position: 'absolute',
-        bottom: 520, 
+        bottom: 590, 
+        padding: 50,
     },
     loginText: {
         fontSize: 24,
@@ -34,10 +35,9 @@ export default StyleSheet.create({
     },
     createAccountText: {
         color: 'blue',
-        marginBottom: 15,
+        marginBottom: 0,
         bottom: 40,
     },
-
     Text: {
         color: '#fff'
     },
@@ -48,11 +48,17 @@ export default StyleSheet.create({
         alignItems: 'center',
         borderRadius: 15,
         marginTop: 0,
-        bottom: 45,
+        bottom: 30,
     },
     buttonText: {
         color: 'white',
         fontSize: 20, 
+    },
+
+    homeContainer: {
+        flex: 1,
+        flexDirection: 'row',
+        justifyContent: 'center',
     },
     imageBackground: {
         position: 'absolute',
@@ -61,5 +67,20 @@ export default StyleSheet.create({
         right: 0,
         width: width,
         height: height * 0.99, // 99% da altura da tela
-    }
+    },
+    // Estilos adicionais para a tela Home
+    imageContainer: {
+        alignItems: 'center',
+        margin: 20, // Espaçamento entre as imagens
+    },
+    image: {
+        width: 100,
+        height: 100,
+        marginBottom: 10, // Espaçamento entre a imagem e o texto
+    },
+    imageText: {
+        fontSize: 16,
+        textAlign: 'center',
+        color: 'black', // Cor do texto para contraste com o fundo
+    },
 });

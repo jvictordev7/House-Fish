@@ -1,45 +1,32 @@
 import React from 'react';
-import { View, Text, StyleSheet, TouchableOpacity, Image } from 'react-native';
+import { View, Text, TouchableOpacity, Image, ImageBackground } from 'react-native';
+import Estilos from '../Estilos'; // Importando o Estilos.js
 
 export default function Home({ navigation }) {
     return (
-        <View style={styles.container}>
-            <TouchableOpacity 
-                style={styles.imageContainer} 
-                onPress={() => navigation.navigate('Tilapia')}
+        <View style={{ flex: 1 }}>
+            <ImageBackground
+                source={require('../../assets/background.png')} // Certifique-se de que o caminho para a imagem de fundo está correto
+                style={Estilos.imageBackground}
+                resizeMode="cover"
             >
-                <Image source={require('../../assets/Tilapia.jpg')} style={styles.image} />
-                <Text style={styles.imageText}>Tilápia</Text>
-            </TouchableOpacity>
-            <TouchableOpacity 
-                style={styles.imageContainer} 
-                onPress={() => navigation.navigate('Tucunare')}
-            >
-                <Image source={require('../../assets/Tucunare.jpg')} style={styles.image} />
-                <Text style={styles.imageText}>Tucunaré</Text>
-            </TouchableOpacity>
+                <View style={Estilos.homeContainer}>
+                    <TouchableOpacity 
+                        style={Estilos.imageContainer} 
+                        onPress={() => navigation.navigate('Tilapia')}
+                    >
+                        <Image source={require('../../assets/tilapia.png')} style={Estilos.image} />
+                        <Text style={Estilos.imageText}>Tilápia</Text>
+                    </TouchableOpacity>
+                    <TouchableOpacity 
+                        style={Estilos.imageContainer} 
+                        onPress={() => navigation.navigate('Tucunare')}
+                    >
+                        <Image source={require('../../assets/tucunare.png')} style={Estilos.image} />
+                        <Text style={Estilos.imageText}>Tucunaré</Text>
+                    </TouchableOpacity>
+                </View>
+            </ImageBackground>
         </View>
     );
 }
-
-const styles = StyleSheet.create({
-    container: {
-        flex: 1,
-        justifyContent: 'center',
-        alignItems: 'center',
-        flexDirection: 'row', // Coloca os elementos em linha
-    },
-    imageContainer: {
-        alignItems: 'center',
-        margin: 20, // Espaçamento entre as imagens
-    },
-    image: {
-        width: 100,
-        height: 100,
-        marginBottom: 10, // Espaçamento entre a imagem e o texto
-    },
-    imageText: {
-        fontSize: 16,
-        textAlign: 'center',
-    },
-});
