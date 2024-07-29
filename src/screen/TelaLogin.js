@@ -16,8 +16,8 @@ export default function TelaLogin({ navigation }) {
                 <TextInput placeholder="Email" style={Estilos.input} keyboardType="email-address" />
                 <TextInput placeholder="Senha" style={Estilos.input} secureTextEntry />
                 <TouchableOpacity onPress={() => navigation.navigate('Cadastro')}>
-                    <Text style={Estilos.createAccountText}><Text style={Estilos.Text}>Ainda não tem conta?</Text>  Crie Conta agora</Text> 
-                    <Text style={Estilos.createAccountText}><Text style={Estilos.Text}>Esqueceu sua senha?</Text>  Crie senha agora</Text> 
+                    <Text style={Estilos.createAccountText}>Crie Conta</Text> 
+                    <Text style={Estilos.createAccountText}>Esqueci a senha</Text> 
                 </TouchableOpacity>
                 <TouchableOpacity style={Estilos.button} onPress={() => navigation.navigate('Home')}>
                     <Text style={Estilos.buttonText}>Login</Text>

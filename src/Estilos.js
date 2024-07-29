@@ -11,17 +11,16 @@ export default StyleSheet.create({
         backgroundColor: 'rgba(0, 0, 0, 0.5)', // Fundo preto semitransparente
     },
     logo: {
-        width: 110,
-        height: 110,
-        position: 'absolute',
-        bottom: 590, 
-        padding: 50,
+        width: 200,
+        height: 200,
+        padding: 10,
+        bottom: 30,
     },
     loginText: {
         fontSize: 24,
         marginBottom: 15,
         color: '#fff',
-        bottom: 25,
+        bottom: 50,
     },
     input: {
         width: '90%',
@@ -31,12 +30,13 @@ export default StyleSheet.create({
         borderRadius: 15,
         marginBottom: 15,
         backgroundColor: '#fff', 
-        bottom: 30, 
+        bottom: 50, 
     },
     createAccountText: {
         color: 'blue',
         marginBottom: 0,
-        bottom: 40,
+        bottom: 60,
+        textAlign: 'center'
     },
     Text: {
         color: '#fff'
@@ -48,39 +48,54 @@ export default StyleSheet.create({
         alignItems: 'center',
         borderRadius: 15,
         marginTop: 0,
-        bottom: 30,
+        bottom: 50,
     },
     buttonText: {
         color: 'white',
         fontSize: 20, 
     },
-
     homeContainer: {
         flex: 1,
+        flexWrap: 'wrap', // Permite que os itens se movam para a próxima linha
         flexDirection: 'row',
         justifyContent: 'center',
+        alignItems: 'flex-start', // Alinha as imagens ao topo
+        padding: 10,
+        marginTop: 20, // Espaço no topo para afastar do topo da tela
     },
     imageBackground: {
         position: 'absolute',
-        bottom: -170, // Começar de baixo para cima
+        marginTop: 300,
         left: 0,
         right: 0,
         width: width,
-        height: height * 0.99, // 99% da altura da tela
+        height: height * 0.9, // Ajusta a altura da imagem de fundo para melhor encaixe
     },
-    // Estilos adicionais para a tela Home
     imageContainer: {
         alignItems: 'center',
-        margin: 20, // Espaçamento entre as imagens
+        margin: 10, // Espaçamento entre as imagens
+        width: (width - 50) / 3, // Ajusta o tamanho para permitir 3 imagens por linha
     },
     image: {
-        width: 100,
-        height: 100,
-        marginBottom: 10, // Espaçamento entre a imagem e o texto
+        width: '100%',
+        height: 90,
+        marginBottom: 8, // Espaçamento entre a imagem e o texto
+        borderRadius: 20,
+        borderColor: 'red',
     },
     imageText: {
-        fontSize: 16,
+        fontSize: 14,
         textAlign: 'center',
         color: 'black', // Cor do texto para contraste com o fundo
+    },
+    headerContainer: {
+        width: '100%',
+        alignItems: 'center',
+        marginVertical: 20, // Espaçamento vertical ao redor do cabeçalho
+    },
+    headerLogo: {
+        width: 110,
+        height: 110,
+        bottom: -50, 
     },
 });

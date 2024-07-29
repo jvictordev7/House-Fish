@@ -6,6 +6,12 @@ import TelaCadastro from '../screen/TelaCadastro';
 import Home from '../screen/Home';
 import Tilapia from '../screen/Peixes/Tilapia';
 import Tucunare from '../screen/Peixes/Tucunare';
+import Dourado from '../screen/Peixes/Dourado';
+import Piau from '../screen/Peixes/Piau';
+import Pintado from '../screen/Peixes/Pintado';
+import Pirarara from '../screen/Peixes/Pirarara';
+import Tambaqui from '../screen/Peixes/Tambaqui';
+import Traira from '../screen/Peixes/Traira';
 
 const Stack = createStackNavigator();
 
@@ -28,6 +34,12 @@ function MyStack() {
             <Stack.Screen name="Home" component={Home} />
             <Stack.Screen name="Tilapia" component={Tilapia} />
             <Stack.Screen name="Tucunare" component={Tucunare} />
+            <Stack.Screen name="Dourado" component={Dourado} />
+            <Stack.Screen name="Piau" component={Piau} />
+            <Stack.Screen name="Pintado" component={Pintado} />
+            <Stack.Screen name="Pirarara" component={Pirarara} />
+            <Stack.Screen name="Tambaqui" component={Tambaqui} />
+            <Stack.Screen name="Traira" component={Traira} />
         </Stack.Navigator>
     );
 }
