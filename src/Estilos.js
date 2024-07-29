@@ -14,7 +14,7 @@ export default StyleSheet.create({
         width: 130,
         height: 130,
         position: 'absolute',
-        bottom: 570, 
+        bottom: 520, 
     },
     loginText: {
         fontSize: 24,
