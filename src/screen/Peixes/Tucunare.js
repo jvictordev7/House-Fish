@@ -1,5 +1,6 @@
 import React from 'react';
 import { View, Text, StyleSheet, Image, ImageBackground, ScrollView } from 'react-native';
+import Estilos from '../../Estilos';
 
 export default function Tucunare() {
     return (
@@ -15,6 +16,7 @@ export default function Tucunare() {
                 </View>
                 <ScrollView style={styles.scrollView}>
                     <View style={styles.textContainer}>
+                        <Text style={Estilos.TxtG}>Tucunaré</Text>
                         <Text style={styles.text}>
                             O Tucunaré é um peixe de água doce nativo da Bacia Amazônica e é conhecido por sua beleza e comportamento agressivo. Ele é muito apreciado na pesca esportiva devido à sua força e resistência. O Tucunaré possui uma coloração vibrante e manchas características em seu corpo.
 

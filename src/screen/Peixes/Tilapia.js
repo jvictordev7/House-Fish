@@ -1,5 +1,6 @@
 import React from 'react';
 import { View, Text, StyleSheet, Image, ImageBackground, ScrollView } from 'react-native';
+import Estilos from '../../Estilos';
 
 export default function Tilapia() {
     return (
@@ -15,6 +16,7 @@ export default function Tilapia() {
                 </View>
                 <ScrollView style={styles.scrollView}>
                     <View style={styles.textContainer}>
+                        <Text style={Estilos.TxtG}>Tilápia</Text>
                         <Text style={styles.text}>
                             A Tilápia é um dos peixes mais populares e amplamente cultivados em todo o mundo. Originária da África, ela é conhecida por sua capacidade de adaptação a diferentes condições ambientais e por seu rápido crescimento. A Tilápia tem um sabor suave e textura firme, o que a torna uma escolha favorita para diversos pratos culinários.
 

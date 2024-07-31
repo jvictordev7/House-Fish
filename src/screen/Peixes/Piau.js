@@ -1,5 +1,6 @@
 import React from 'react';
 import { View, Text, StyleSheet, Image, ImageBackground, ScrollView } from 'react-native';
+import Estilos from '../../Estilos'
 
 export default function Piau() {
     return (
@@ -15,6 +16,7 @@ export default function Piau() {
                 </View>
                 <ScrollView style={styles.scrollView}>
                     <View style={styles.textContainer}>
+                        <Text style={Estilos.TxtG}>Piau</Text>
                         <Text style={styles.text}>
                             O Piau é um peixe de água doce muito comum nos rios e lagos do Brasil. Ele é conhecido por sua capacidade de adaptação a diferentes ambientes aquáticos e por sua carne saborosa e nutritiva. O Piau é frequentemente encontrado em cardumes e pode ser identificado por suas escamas prateadas e corpo alongado.
 

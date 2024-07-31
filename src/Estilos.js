@@ -65,7 +65,7 @@ export default StyleSheet.create({
     },
     imageBackground: {
         position: 'absolute',
-        marginTop: 300,
+        marginTop: 250,
         left: 0,
         right: 0,
         width: width,
@@ -97,5 +97,12 @@ export default StyleSheet.create({
         width: 110,
         height: 110,
         bottom: -50, 
+    },
+
+    TxtG: {
+        fontSize: 30,
+        fontWeight: 'bold',
+        textAlign: 'center',
+        padding: 20,
     },
 });

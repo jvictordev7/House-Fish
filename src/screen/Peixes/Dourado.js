@@ -1,5 +1,6 @@
 import React from 'react';
 import { View, Text, StyleSheet, Image, ImageBackground, ScrollView } from 'react-native';
+import Estilos from '../../Estilos';
 
 export default function Dourado() {
     return (
@@ -15,6 +16,7 @@ export default function Dourado() {
                 </View>
                 <ScrollView style={styles.scrollView}>
                     <View style={styles.textContainer}>
+                        <Text style={Estilos.TxtG}>Dourado</Text>
                         <Text style={styles.text}>
                             O Dourado é um dos peixes mais icônicos da pesca esportiva na América do Sul, especialmente no Brasil e na Argentina. Conhecido como o "Rei do Rio", o Dourado é famoso por sua cor dourada vibrante e pela força que demonstra ao ser fisgado, proporcionando uma experiência emocionante para os pescadores.
 
