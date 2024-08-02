@@ -3,7 +3,7 @@ import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 import TelaLogin from '../screen/TelaLogin';
 import TelaCadastro from '../screen/TelaCadastro';
-import TelaRedefinirSenha from '../screen/TelaRedefinirSenha'; // Verifique a importação
+import TelaRedefinirSenha from '../screen/TelaRedefinirSenha';
 import Home from '../screen/Home';
 import Tilapia from '../screen/Peixes/Tilapia';
 import Tucunare from '../screen/Peixes/Tucunare';
