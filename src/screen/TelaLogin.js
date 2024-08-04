@@ -7,8 +7,10 @@ import { auth } from '../../src/Services/FirebaseConfig'; // Certifique-se do ca
 export default function TelaLogin({ navigation }) {
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
+    const [errorMessage, setErrorMessage] = useState(''); // Estado para a mensagem de erro
 
     const handleLogin = () => {
+        setErrorMessage(''); // Limpar mensagem de erro antes de tentar login
         signInWithEmailAndPassword(auth, email, password)
             .then((userCredential) => {
                 // Login bem-sucedido
@@ -21,7 +23,21 @@ export default function TelaLogin({ navigation }) {
                 const errorCode = error.code;
                 const errorMessage = error.message;
                 console.log(errorMessage);
-                // Aqui você pode exibir um alerta ou mensagem de erro para o usuário
+                
+                // Atualizar mensagem de erro com base no código de erro
+                switch (errorCode) {
+                    case 'auth/invalid-email':
+                        setErrorMessage('O e-mail inserido é inválido.');
+                        break;
+                    case 'auth/user-not-found':
+                        setErrorMessage('Usuário não encontrado.');
+                        break;
+                    case 'auth/wrong-password':
+                        setErrorMessage('Senha incorreta.');
+                        break;
+                    default:
+                        setErrorMessage('Ocorreu um erro. Por favor, tente novamente.');
+                }
             });
     };
 
@@ -35,6 +51,10 @@ export default function TelaLogin({ navigation }) {
             <View style={Estilos.container}>
                 <Image source={require('../../assets/logo.png')} style={Estilos.logo} />
                 <Text style={Estilos.loginText}>Login</Text>
+                
+                {/* Exibir mensagem de erro, se houver */}
+                {errorMessage ? <Text style={Estilos.errorText}>{errorMessage}</Text> : null}
+                
                 <TextInput 
                     placeholder="Email" 
                     style={Estilos.input} 

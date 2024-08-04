@@ -105,4 +105,15 @@ export default StyleSheet.create({
         textAlign: 'center',
         padding: 20,
     },
+    errorText: {
+        color: '#fff',
+        backgroundColor: 'red', // Fundo vermelho para destaque
+        padding: 10,
+        borderRadius: 5,
+        marginBottom: 20,
+        textAlign: 'center',
+        zIndex: 1,
+        position: 'absolute',
+        top: 100,
+    },
 });
