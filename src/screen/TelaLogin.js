@@ -44,16 +44,17 @@ export default function TelaLogin({ navigation }) {
     return (
         <View style={{ flex: 1 }}>
             <ImageBackground
-                source={require('../../assets/background.png')}
+                source={require('../../assets/background.png')} // Ajuste o caminho da imagem
                 style={Estilos.imageBackground}
                 resizeMode="cover"
             />
             <View style={Estilos.container}>
-                <Image source={require('../../assets/logo.png')} style={Estilos.logo} />
+                <Image source={require('../../assets/logo.png')} style={Estilos.logo} /> {/* Ajuste o caminho da imagem */}
                 <Text style={Estilos.loginText}>Login</Text>
                 
                 {/* Exibir mensagem de erro, se houver */}
                 {errorMessage ? <Text style={Estilos.errorText}>{errorMessage}</Text> : null}
+                
                 
                 <TextInput 
                     placeholder="Email" 
@@ -72,9 +73,11 @@ export default function TelaLogin({ navigation }) {
                 
                 <View style={Estilos.rowContainer}>
                     <TouchableOpacity onPress={() => navigation.navigate('Cadastro')}>
-                        <Text style={Estilos.createAccountText}>
-                            <Text style={Estilos.Text}>Ainda não tem conta?</Text> Crie Conta
-                        </Text>
+                    <Text style={Estilos.createAccountText}>
+                        <Text style={Estilos.Text}>Ainda não tem conta? </Text> 
+                        <Text style={Estilos.createAccountText}>Cadastre-se</Text>
+                    </Text>
+
                     </TouchableOpacity>
                     <TouchableOpacity onPress={() => navigation.navigate('RedefinirSenha')}>
                         <Text style={Estilos.createAccountText}>Esqueci a senha</Text>

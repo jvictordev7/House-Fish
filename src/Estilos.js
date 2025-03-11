@@ -38,6 +38,9 @@ export default StyleSheet.create({
         bottom: 60,
         textAlign: 'center'
     },
+    textWrapper: {
+        color: '#fff'
+    },
     Text: {
         color: '#fff'
     },
